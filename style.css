@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+p {
+  color: var(--grayish-blue);
+  font-size: 18px;
+}
+
+h1,
+h2,
+h4 {
+  color: var(--dark-blue);
+}
+
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+
+header img {
+  margin-top: 10rem;
+}
+
+.heading {
+  margin-bottom: 5rem;
+}
+
+main {
+  padding-inline: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.heading p {
+  margin-bottom: 2rem;
+}
+
+.centered {
+  width: 40rem;
+  margin-inline: auto;
+}
+
+.btn {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font: inherit;
+}
+
+.ios {
+  background-color: var(--cyan);
+  margin-right: 0.5rem;
+  box-shadow: 4px 4px 18px -5px rgba(38, 186, 164, 1);
+  -webkit-box-shadow: 4px 4px 18px -5px rgba(38, 186, 164, 1);
+  -moz-box-shadow: 4px 4px 18px -5px rgba(38, 186, 164, 1);
+}
+
+.mac {
+  background-color: var(--light-blue);
+  box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
+  -webkit-box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
+  -moz-box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
+}
+
+.snippets h2 {
+  margin-bottom: 1rem;
+}
+
+.snippets {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+}
+
+.computer {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 7rem;
+}
+
+.computer img {
+  margin-left: -5rem;
+  width: 100%;
+}
+
+.comp-text {
+  text-align: left;
+  width: 70%;
+  margin-bottom: 4rem;
+}
+
+.comp-text h4 {
+  font-size: 1.2rem;
+}
+
+.devices {
+  width: 100%;
+}
+
+.access {
+  margin-bottom: 7rem;
+}
+
+.access h2 {
+  margin-bottom: 1rem;
+}
+
+.supercharge h2 {
+  margin-bottom: 1rem;
+}
+
+.workflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.workflow div {
+  width: 400px;
+}
+
+.workflow img {
+  margin-bottom: 2rem;
+}
+
+.workflow h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.logos {
+  display: flex;
+  /* gap: 8rem; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+.clipboard h2 {
+  margin-bottom: 1rem;
+}
+
+.clipboard p {
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: hsla(202, 11%, 66%, 0.185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-top: 10rem;
+}
+
+footer a {
+  color: var(--dark-blue);
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+
+.spacing {
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-right: 15rem;
+}
+
+.footer-logo {
+  width: 4rem;
+  margin-right: 5rem;
+}
+
+.link-one {
+  margin-right: 4rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: hsla(202, 11%, 66%, 0.185);
+  padding: 0.5rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 1200px){
+  header {
+    background-image: url(./images/bg-header-mobile.png);
+  }
+  main {
+    padding-inline: 3rem;
+  }
+
+  .centered {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .ios {
+    margin-bottom: 2rem;
+  }
+
+  .computer {
+    flex-direction: column;
+  }
+
+  .comp-text {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .computer img {
+    margin: 0;
+  }
+
+  .workflow {
+    flex-direction: column;
+  }
+
+  .workflow div {
+    width: 100%;
+  }
+
+  .logos {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  
+  .links {
+    flex-direction: column;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 4rem;
+    margin: 2rem 0;
+  }
+  
+  .link-one {
+    margin-right: 0;
+  }
+
+  .spacing {
+    margin-bottom: 2rem;
+  }
+
+  footer a {
+    margin-bottom: 2rem;
+  }
+
+  .social {
+    margin-top: 2.5rem;
+    gap: 3rem;
+  }
+}
