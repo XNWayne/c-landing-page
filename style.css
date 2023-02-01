@@ -71,7 +71,7 @@ h2 {
 
 .btn {
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 50px;
   font: inherit;
 }
@@ -84,11 +84,19 @@ h2 {
   -moz-box-shadow: 4px 4px 18px -5px rgba(38, 186, 164, 1);
 }
 
+.ios:hover {
+  background-color: hsl(171deg 92% 45%);
+}
+
 .mac {
   background-color: var(--light-blue);
   box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
   -webkit-box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
   -moz-box-shadow: 4px 4px 18px -5px rgba(97, 115, 255, 1);
+}
+
+.mac:hover {
+  background-color: hsl(233, 100%, 76%);
 }
 
 .snippets h2 {
@@ -123,7 +131,7 @@ h2 {
 }
 
 .devices {
-  width: 100%;
+  width: 60%;
 }
 
 .access {
@@ -191,6 +199,10 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  color: var(--cyan);
+}
+
 .spacing {
   margin-bottom: 1.5rem;
 }
@@ -216,6 +228,11 @@ footer a {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+.social svg:hover path {
+  fill: #26baa4;
+  cursor: pointer;
 }
 
 /* Attribution */
